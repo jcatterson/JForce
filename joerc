@@ -367,7 +367,7 @@
 
  Default local options
 -highlight
--istep 2
+-istep 4
 
  Perforce macro: use this macro (put in first column) to have joe "p4 edit"
  a file you're about to change.

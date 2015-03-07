@@ -16,6 +16,9 @@
 +*** 
 -syntax diff
 
+*.csv
+-syntax java
+
 
 
 *
@@ -158,6 +161,14 @@
 -syntax ruby
 -istep 2
 -tab 2
+
+*.rake
+-autoindent
+-syntax ruby
+-istep 2
+-tab 2
+
+
 
 
  Perl
@@ -438,7 +449,6 @@
 
  XML
 *.xml
--wordwrap
 -autoindent
 -syntax xml
 
@@ -450,26 +460,38 @@
 
  HTML
 *.htm
--wordwrap
 -autoindent
 -syntax html
 
+*.html.erb
+-autoindent
+ -syntax html
+-tab 2
+
 *.html
--wordwrap
 -autoindent
 -syntax html
+-istep 4
+-purify
+-tab 4
 
 *.component
 -autoindent
 -syntax html
+-istep 4
+-tab 4
 
 *.page
 -autoindent
 -syntax html
+-istep 4
+-tab 4
 
 *.trigger
 -autoindent
 -syntax java
+-istep 4
+-tab 4
 
 *.cls
 -autoindent
@@ -477,6 +499,7 @@
 -smarthome
 -smartbacks
 -istep 4
+-tab 4
 -purify
 
  JAVA
@@ -496,6 +519,21 @@
 -smartbacks
 -purify
 -cpara >#!;*/%
+-tab 4
+-istep 4
+-spaces
+
+*.resource
+-autoindent
+-syntax java
+-smarthome
+-smartbacks
+-purify
+-cpara >#!;*/%
+-tab 4
+-istep 4
+-spaces
+
 
  Hypertext preprocessor file
 *.php
